@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  apache:
+    image: bitamer/kata-01:latest
+    container_name: apache-kata-01
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+      - ./configs/httpd.conf:/usr/local/apache2/conf/httpd.conf
