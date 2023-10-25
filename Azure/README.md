@@ -4,21 +4,19 @@ This folder contains a set of Azure labs that cover a variety of topics. The lab
 
 ### Contents
 
-
-### Prerequisites
+## Prerequisites
 
 To complete these labs, you will need a free Azure account.
 
-First, you need to create a Microsoft account using your Gmail address or another email address. 
-Follow this link to create your Microsoft account: https://account.microsoft.com/account/Account.
+1. **Create a Microsoft Account:** If you don't have one already, you'll need to create a Microsoft account using your Gmail address or another email address. You can create your Microsoft account by following this link: [Create a Microsoft Account](https://account.microsoft.com/account/Account).
 
-Next, you need to create a Microsoft Learn account. 
-Follow this link to create your Microsoft Learn account: https://techcommunity.microsoft.com/t5/educator-developer-blog/creating-your-microsoft-learn-profile-and-combine-your-student/ba-p/3662527.
+2. **Create a Microsoft Learn Account:** To access Microsoft Learn resources and labs, you'll need a Microsoft Learn account. You can create your Microsoft Learn account by following this link: [Create a Microsoft Learn Account](https://techcommunity.microsoft.com/t5/educator-developer-blog/creating-your-microsoft-learn-profile-and-combine-your-student/ba-p/3662527).
 
-Once you have created your Microsoft and Microsoft Learn accounts, you can explore the Microsoft Learn sandbox.
- To do this, follow this link: https://learn.microsoft.com/en-gb/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox.
+3. **Explore the Microsoft Learn Sandbox:** Once you've created your Microsoft and Microsoft Learn accounts, you can explore the Microsoft Learn sandbox. To do this, follow this link: [Explore the Microsoft Learn Sandbox](https://learn.microsoft.com/en-gb/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox).
 
-Note that you need to activate the sandbox before you can use it. Once activated, the sandbox will be available for 3 hours.
+   - **Note:** You need to activate the sandbox before you can use it. Once activated, the sandbox will be available for 3 hours.
+
+By completing these prerequisites, you'll have the necessary accounts and access to Azure resources to get the most out of these labs.
 
 ### Labs
 
