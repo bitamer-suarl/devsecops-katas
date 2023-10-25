@@ -60,19 +60,6 @@ To create a virtual machine in the Azure portal, follow these steps:
 
 12. The Azure portal will start creating the virtual machine. Once the virtual machine is created, you can connect to it and start using it.
 
-Here are some additional tips for creating a virtual machine in the Azure portal:
-
-- If you are creating a virtual machine for the first time, you may want to use a pre-defined image, such as the Windows Server 2022 Datacenter image.
-
-- If you are creating a virtual machine for a specific purpose, such as running a web application, you may want to select a specialized image, such as the Web Server image.
-
-- You can also create your own custom image if you have specific requirements.
-
-- When choosing the size of the virtual machine, consider the amount of resources that you need for the applications that you will be running on it.
-
-- You can also configure autoscaling for your virtual machine so that it can automatically scale up or down based on demand.
-
-- Once you have created the virtual machine, you can connect to it using Remote Desktop.
 
 * Lab 2: Create a web application
 * Lab 3: Deploy Azure container instances
