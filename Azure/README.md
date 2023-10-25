@@ -61,6 +61,9 @@ To create a virtual machine in the Azure portal, follow these steps:
 12. The Azure portal will start creating the virtual machine. Once the virtual machine is created, you can connect to it and start using it.
 
 
+
+
+
 * **Lab 2: Create a web application**
 In this lab, you will learn how to create a web application in Azure. Follow these step-by-step instructions to complete the lab:
 
