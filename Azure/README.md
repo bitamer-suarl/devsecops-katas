@@ -61,7 +61,65 @@ To create a virtual machine in the Azure portal, follow these steps:
 12. The Azure portal will start creating the virtual machine. Once the virtual machine is created, you can connect to it and start using it.
 
 
-* Lab 2: Create a web application
+* **Lab 2: Create a web application**
+In this lab, you will learn how to create a web application in Azure. Follow these step-by-step instructions to complete the lab:
+
+**Step 1: Sign in to the Azure Portal**
+
+1. Go to the [Azure portal](https://portal.azure.com/).
+
+2. Sign in with your Microsoft account.
+
+**Step 2: Create a Web App Service**
+
+3. In the Azure portal, click on the "Create a resource" button.
+
+4. In the "Search the Marketplace" box, type "Web App" and select "Web App" from the results.
+
+5. Click the "Create" button on the "Web App" page.
+
+**Step 3: Configure Basic Settings**
+
+6. Fill out the basic settings for your web app:
+   - **App name**: Enter a unique name for your web app.
+   - **Subscription**: Select your Azure subscription.
+   - **Resource Group**: Select an existing resource group or create a new one.
+   - **OS**: Choose the operating system (Windows or Linux) for your web app.
+   - **Publish**: Select your preferred publishing method (Code, Docker, etc.).
+   - **Runtime stack**: Choose a runtime stack for your web app (e.g., Node.js, .NET, Python).
+   - **Region**: Choose the Azure region for your web app.
+
+7. Click the "Next" button to continue.
+
+**Step 4: Configure App Service Plan**
+
+8. Configure the App Service Plan for your web app:
+   - **Operating System**: Select the desired OS (Windows or Linux).
+   - **Sku and size**: Choose the appropriate pricing tier and size for your web app. You can start with a free or shared plan for testing.
+
+9. Click the "Review + create" button.
+
+**Step 5: Review and Create**
+
+10. Review the settings to ensure they are correct.
+
+11. Click the "Create" button to create your web app.
+
+**Step 6: Deployment**
+
+12. Once the web app is created, navigate to the "Deployment Center" in the Azure portal.
+
+13. Configure your deployment source, such as connecting to a Git repository or using Azure DevOps.
+
+14. Initiate the deployment of your web application code.
+
+**Step 7: Access Your Web Application**
+
+15. After deployment, you can access your web application by visiting the URL of your web app. You'll find the URL in the "Overview" section of the web app's dashboard.
+
+Congratulations! You've successfully created a web application in Azure.
+
+
 * Lab 3: Deploy Azure container instances
 * Lab 4: Create a virtual network
 * Lab 5: Create a blob storage account
