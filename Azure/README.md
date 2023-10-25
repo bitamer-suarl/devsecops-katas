@@ -24,7 +24,7 @@ By completing these prerequisites, you'll have the necessary accounts and access
 
 here is the following labs:
 
-* Lab 1: Create a virtual machine in the portal : 
+* **Lab 1: Create a virtual machine in the portal :**
 
 Create a Virtual Machine in the Azure Portal
 
