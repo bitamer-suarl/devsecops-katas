@@ -123,12 +123,284 @@ In this lab, you will learn how to create a web application in Azure. Follow the
 Congratulations! You've successfully created a web application in Azure.
 
 
-* Lab 3: Deploy Azure container instances
-* Lab 4: Create a virtual network
-* Lab 5: Create a blob storage account
-* Lab 6: Create a SQL database
-* Lab 7: Implement an Azure IoT Hub
-* Lab 8: Implement Azure Functions
+* **Lab 3: Deploy Azure container instances**
+
+# Deploy Azure Container Instances
+
+In this lab will walk you through the steps to deploy container instances in Azure using the Azure portal.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- A web browser to access the [Azure portal](https://portal.azure.com/).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create a Resource Group**:
+   - In the Azure portal, click on "Resource groups" in the left-hand menu.
+   - Click the "+ Add" button to create a new resource group.
+   - Provide a unique name for the resource group, select your desired region, and click "Review + create." Then click "Create" to create the resource group.
+
+3. **Create a Container Instance**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "Container Instance" and select it from the list.
+   - Click "Create" to start the Container Instance creation process.
+   - Fill in the required details, including the container name, image source, and resource group (select the one you created earlier).
+   - Configure the container settings, such as CPU and memory allocation, and network settings.
+   - Review your configuration and click "Review + create."
+   - After validation, click "Create" to deploy the container instance.
+
+4. **View Container Instance Details**:
+   - Once your container instance is created, go to the "Resource groups" section in the Azure portal.
+   - Select the resource group you created and click on your container instance to view its details.
+
+5. **Access Your Container**:
+   - In the container instance details, you can find the container's IP address and port information.
+   - Use this information to access your container via a web browser or other tools, depending on the service your container provides.
+
+6. **Cleanup**:
+   - When you're done with your container instance, go to the resource group in the Azure portal.
+   - Select your container instance, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully deployed Azure container instances using the Azure portal. 
+
+* **Lab 4: Create a virtual network**
+
+In this lab, you will learn how to create a virtual network (VNet) in Azure.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- Access to the [Azure portal](https://portal.azure.com/).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create a Virtual Network**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "Virtual Network" and select it from the list.
+   - Click "Create" to start the Virtual Network creation process.
+   - Provide the following information:
+     - **Name**: Choose a unique name for your virtual network.
+     - **Region**: Select the Azure region where your virtual network will be located.
+     - **Resource group**: You can create a new resource group or select an existing one.
+     - **Address space**: Define the IP address range for your virtual network.
+     - **Subnet**: Create one or more subnets within your virtual network and specify their address ranges.
+   - Review your configuration, and click "Review + create."
+   - After validation, click "Create" to deploy the virtual network.
+
+3. **View Virtual Network Details**:
+   - Once your virtual network is created, go to the "Virtual networks" section in the Azure portal.
+   - Select your virtual network to view its details.
+
+4. **Manage Subnets**:
+   - In the virtual network details, you can manage subnets, add new subnets, or make changes to existing ones.
+
+5. **Cleanup**:
+   - If you no longer need the virtual network, you can go to the resource group containing the virtual network.
+   - Select the virtual network, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully created a virtual network in Azure. 
+
+* **Lab 5: Create a blob storage account**
+
+In this lab, you will learn how to create a Blob Storage account in Azure.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- Access to the [Azure portal](https://portal.azure.com/).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create a Blob Storage Account**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "Storage account" and select it from the list.
+   - Click "Create" to start the Blob Storage account creation process.
+   - Provide the following information:
+     - **Subscription**: Select your Azure subscription.
+     - **Resource group**: Create a new resource group or select an existing one.
+     - **Storage account name**: Choose a unique name for your Blob Storage account.
+     - **Location**: Specify the Azure region where your storage account will be located.
+     - **Performance**: Choose the performance tier (Standard, Premium).
+     - **Replication**: Select the replication option for data redundancy (Locally redundant storage, Geo-redundant storage, etc.).
+     - **Secure transfer required**: Enable secure transfer (HTTPS) if needed.
+   - Review your configuration, and click "Review + create."
+   - After validation, click "Create" to deploy the Blob Storage account.
+
+3. **View Blob Storage Account Details**:
+   - Once your Blob Storage account is created, go to the "Storage accounts" section in the Azure portal.
+   - Select your storage account to view its details.
+
+4. **Manage Blob Containers**:
+   - In the storage account details, you can manage Blob containers, upload data, and configure access settings.
+
+5. **Access Keys and Connection String**:
+   - To access your Blob Storage account programmatically, obtain the access keys or connection string from the account's settings.
+
+6. **Cleanup**:
+   - If you no longer need the Blob Storage account, you can go to the resource group containing the account.
+   - Select the storage account, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully created a Blob Storage account in Azure. 
+
+
+* **Lab 6: Create a SQL database**
+
+In this lab, you will learn how to create a SQL Database in Azure.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- Access to the [Azure portal](https://portal.azure.com/).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create a SQL Database**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "SQL Database" and select it from the list.
+   - Click "Create" to start the SQL Database creation process.
+   - Provide the following information:
+     - **Subscription**: Select your Azure subscription.
+     - **Resource group**: Create a new resource group or select an existing one.
+     - **Database name**: Choose a unique name for your SQL Database.
+     - **Server**: Create a new database server or select an existing one. Configure the server's admin credentials.
+     - **Collation**: Choose a collation for your database if needed.
+     - **Pricing tier**: Select the pricing tier based on your performance and storage requirements.
+   - Review your configuration, and click "Review + create."
+   - After validation, click "Create" to deploy the SQL Database.
+
+3. **View SQL Database Details**:
+   - Once your SQL Database is created, go to the "SQL databases" section in the Azure portal.
+   - Select your database to view its details.
+
+4. **Connect to SQL Database**:
+   - To connect to your SQL Database, you can use tools like SQL Server Management Studio (SSMS) or Azure Data Studio.
+   - Obtain the server name and credentials from the database settings to establish the connection.
+
+5. **Manage Database Objects**:
+   - In the database details, you can manage database objects, run queries, and configure access settings.
+
+6. **Cleanup**:
+   - If you no longer need the SQL Database, you can go to the resource group containing the database.
+   - Select the database, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully created a SQL Database in Azure.
+
+* **Lab 7: Implement an Azure IoT Hub**
+
+In this lab, you will learn how to implement an Azure IoT Hub.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- Access to the [Azure portal](https://portal.azure.com/).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create an Azure IoT Hub**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "IoT Hub" and select it from the list.
+   - Click "Create" to start the IoT Hub creation process.
+   - Provide the following information:
+     - **Subscription**: Select your Azure subscription.
+     - **Resource group**: Create a new resource group or select an existing one.
+     - **Region**: Specify the Azure region for your IoT Hub.
+     - **IoT Hub name**: Choose a unique name for your IoT Hub.
+     - **Pricing and scale tier**: Select the pricing tier based on your device and message requirements.
+   - Review your configuration, and click "Review + create."
+   - After validation, click "Create" to deploy the Azure IoT Hub.
+
+3. **Access IoT Hub Details**:
+   - Once your IoT Hub is created, go to the "IoT hubs" section in the Azure portal.
+   - Select your IoT Hub to access its details.
+
+4. **Register IoT Devices**:
+   - To implement IoT scenarios, you need to register devices with your IoT Hub. In the IoT Hub details, navigate to "IoT devices" and add devices as needed.
+
+5. **Connect IoT Devices**:
+   - Use the connection strings or device-specific credentials to connect your IoT devices to the IoT Hub. Implement device communication and management as required.
+
+6. **Monitor and Manage**:
+   - Explore the monitoring and management capabilities of your IoT Hub. Monitor device telemetry, implement security policies, and configure message routing.
+
+7. **Cleanup**:
+   - If you no longer need the IoT Hub, you can go to the resource group containing the IoT Hub.
+   - Select the IoT Hub, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully implemented an Azure IoT Hub.
+
+* **Lab 8: Implement Azure Functions**
+
+In this lab, you will learn how to implement Azure Functions.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- An Azure account.
+- Access to the [Azure portal](https://portal.azure.com/).
+- Azure Functions Core Tools if you plan to develop functions locally. You can [install it here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local).
+
+## Steps
+
+1. **Log in to Azure Portal**: Open your web browser and go to the [Azure portal](https://portal.azure.com). Sign in with your Azure account.
+
+2. **Create an Azure Function App**:
+   - In the Azure portal, click on "Create a resource" in the left-hand menu.
+   - Search for "Function App" and select it from the list.
+   - Click "Create" to start the Function App creation process.
+   - Provide the following information:
+     - **Subscription**: Select your Azure subscription.
+     - **Resource group**: Create a new resource group or select an existing one.
+     - **Function app name**: Choose a unique name for your Function App.
+     - **Publish**: Select the publishing method (Code or Docker). For Code, you can choose the runtime stack (e.g., Node.js, Python).
+     - **Operating system**: Choose the operating system for your Function App.
+     - **Region**: Specify the Azure region for your Function App.
+     - **Plan**: Choose a hosting plan that meets your performance and scaling needs.
+   - Review your configuration, and click "Review + create."
+   - After validation, click "Create" to deploy the Azure Function App.
+
+3. **Create and Test Functions**:
+   - Once your Function App is created, navigate to the Function App's overview in the Azure portal.
+   - Click "Functions" to add and manage functions in your Function App.
+   - Create a new function or use one of the available templates.
+   - Implement and test your functions using the Azure portal or local development tools.
+
+4. **Trigger and Bindings**:
+   - Leverage triggers and bindings to connect your functions to various data sources and events. Configure bindings based on your use case.
+
+5. **Monitor and Diagnose**:
+   - Explore the monitoring and diagnostics features of your Function App. Set up application insights and review function logs.
+
+6. **Deploy and Scale**:
+   - When you're satisfied with your functions, deploy them to your Function App. Scale the app as needed to accommodate increased workloads.
+
+7. **Cleanup**:
+   - If you no longer need the Function App, you can go to the resource group containing the Function App.
+   - Select the Function App, click "Delete," and follow the prompts to remove it.
+
+That's it! You've successfully implemented Azure Functions. Customize your functions and configurations to address your specific use cases.
+
 * Lab 9: Create a virtual machine with a template
 * Lab 10: Create a virtual machine with PowerShell
 * Lab 11: Create a virtual machine with the CLI
