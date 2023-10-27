@@ -125,8 +125,6 @@ Congratulations! You've successfully created a web application in Azure.
 
 * **Lab 3: Deploy Azure container instances**
 
-# Deploy Azure Container Instances
-
 In this lab will walk you through the steps to deploy container instances in Azure using the Azure portal.
 
 ## Prerequisites
