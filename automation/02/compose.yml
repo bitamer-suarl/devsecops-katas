@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  keycloak-db:
+    image: docker.io/bitnami/postgresql:${KEYCLOAK_POSTGRES_VERSION}
+    restart :  unless-stopped 
+    container_name: keycloak-db
+    environment:
+      - POSTGRESQL_PASSWORD=${KEYCLOAK_DATABASE_PASSWORD}
+      - POSTGRESQL_USERNAME=bn_keycloak
+      - POSTGRESQL_DATABASE=bitnami_keycloak
+    volumes:
+      - 'keycloak_db_data:/bitnami/postgresql'
+
+  keycloak:
+    image: docker.io/bitnami/keycloak:${KEYCLOAK_VERSION}
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_DATABASE_HOST=keycloak-db
+      - KEYCLOAK_DATABASE_PASSWORD=${KEYCLOAK_DATABASE_PASSWORD}
+      - KEYCLOAK_CREATE_ADMIN_USER=false
+      - KEYCLOAK_ADMIN_USER=${KEYCLOAK_ADMIN_USER}
+      - KEYCLOAK_ADMIN_PASSWORD=${KEYCLOAK_ADMIN_PASSWORD}
+      # - HOSTNAME=keycloak.lab.bitamer.com
+      # - KC_HOSTNAME=keycloak.lab.bitamer.com
+      # - KC_PROXY=edge
+    depends_on:
+      - keycloak-db
+    restart :  unless-stopped 
+    ports:
+      - "8080:8080"
+volumes:
+  keycloak_db_data:
+    driver: local
+  db_data:
+    driver: local
